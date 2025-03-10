@@ -11,9 +11,9 @@ console.log("3. R$ 1300");
 
 
 do {
-    opcao = input.questionInt('Escolha o valor do salário mínimo do seu estado: ');
+    opcao = input.questionInt('Escolha o valor do salario minimo do seu estado: ');
     if (opcao !== 1 && opcao !== 2 && opcao !== 3) {
-        console.log('Opção inválida. Por favor, insira um número válido.');
+        console.log('Opçao invalida. Por favor, insira um numero valido.');
     }
 } while (opcao !== 1 && opcao !== 2 && opcao !== 3);
 
@@ -32,9 +32,9 @@ switch(opcao) {
 }
 
 do{
-var codigo = input.question('Informe o codigo do funcionário: ');
+var codigo = input.question('Informe o codigo do funcionario: ');
 if (isNaN(codigo) || codigo <0) {
-    console.log('Codigo invalido. Por favor, insira um codigo válido.');
+    console.log('Codigo invalido. Por favor, insira um codigo valido.');
 }
 }while (isNaN(codigo) || codigo <0)
 
@@ -46,18 +46,18 @@ if (isNaN(horas) || horas < 0){
 }while (isNaN(horas) || horas < 0)
 
 do{
-var turno = input.question('Informe o turno(M – matutino, V – vespertino ou N – noturno): ');
+var turno = input.question('Informe o turno(M = matutino, V = vespertino ou N = noturno): ');
 turno = turno.toUpperCase();
 if (turno !== 'M' && turno !== 'V' && turno !== 'N') {
-    console.log('Turno inválido. Por favor, insira M, V ou N.');
+    console.log('Turno invalido. Por favor, insira M, V ou N.');
 }
 }while (turno !== 'M' && turno !== 'V' && turno !== 'N')
 
 do{
-var categoria = input.question('Informe a categoria (F – funcionário, G – gerente):')
+var categoria = input.question('Informe a categoria (F = funcionario, G = gerente):')
 categoria = categoria.toUpperCase();
 if (categoria !== "F" && categoria !== "G"){
-    console.log('Categoria inválida. Por favor, insira F ou G.');
+    console.log('Categoria invalida. Por favor, insira F ou G.');
 }
 }while (categoria !== "F" && categoria !== "G")
 
@@ -100,9 +100,9 @@ let auxilio = CalcularAuxilio();
 let salarioFinal = salarioInicial + auxilio;
 console.log(``)
 console.log(`Codigo do funcionario: ${codigo}`)
-console.log(`Número de horas trabalhadas: ${horas}`)
+console.log(`Numero de horas trabalhadas: ${horas}`)
 console.log(`Valor da hora trabalhada: R$${valorDaHora}`)
-console.log(`Salário inicial: R$${salarioInicial.toFixed(2)}`)
-console.log(`Auxílio alimentação: R$${auxilio.toFixed(2)}`);
-console.log(`Salário final: R$${salarioFinal.toFixed(2)}`)
+console.log(`Salario inicial: R$${salarioInicial.toFixed(2)}`)
+console.log(`Auxilio alimentaçao: R$${auxilio.toFixed(2)}`);
+console.log(`Salario final: R$${salarioFinal.toFixed(2)}`)
 
