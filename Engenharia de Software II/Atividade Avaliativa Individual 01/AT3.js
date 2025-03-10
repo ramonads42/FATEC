@@ -10,25 +10,25 @@ var mediaFinal = ''
 
 do{
 var nota1 = parseFloat(input.question('Informe sua nota em atividades praticas de 0 a 10: '));
-if (isNaN(nota1) || nota1 < 0) {
+if (isNaN(nota1) || nota1 < 0 || nota1 > 10) {
     console.log('Nota inválida');
 }
-}while (isNaN(nota1) || nota1 < 0)
+}while (isNaN(nota1) || nota1 < 0 || nota1 > 10)
 
 do{ 
 var nota2 = parseFloat(input.question('Informe sua nota na prova do semestre 0 a 10: '));
-if (isNaN(nota2) || nota2 < 0) {
+if (isNaN(nota2) || nota2 < 0 || nota2 > 10) {
     console.log('Nota inválida');
 
 }
-}while (isNaN(nota2) || nota2 < 0)
+}while (isNaN(nota2) || nota2 < 0 || nota2 > 10)
 
 do{
-var nota3 = parseFloat(input.question('Informe sua nota no trabalho teórico 0 a 10: '));
-if (isNaN(nota3) || nota3 < 0) {
+var nota3 = parseFloat(input.question('Informe sua nota no trabalho teorico 0 a 10: '));
+if (isNaN(nota3) || nota3 < 0 || nota3 > 10) {
     console.log('Nota inválida');
 }
-}while (isNaN(nota3) || nota3 < 0)
+}while (isNaN(nota3) || nota3 < 0 || nota3 > 10)
 
 let media = ((peso1 * nota1) + (peso2*nota2)+(peso3*nota3))/ (peso1 + peso2 + peso3)
 
