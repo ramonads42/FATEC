@@ -14,10 +14,10 @@ if (!/^[\p{L}]+$/u.test(nome)) {
 do{
 var alturaInput = input.question('Informe sua altura em centrimetros: ');
 altura = parseFloat(alturaInput);
-if (isNaN(altura) || altura <= 0) {
+if (isNaN(altura) || altura <= 40) {
     console.log('Altura inválida.');
 }
-}while (isNaN(altura) || altura <= 0)
+}while (isNaN(altura) || altura <= 40)
 
 do{
 var pesoInput = input.question('Informe seu peso em Kilos: ');
