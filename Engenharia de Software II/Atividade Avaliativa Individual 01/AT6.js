@@ -8,11 +8,11 @@ if (isNaN(numero1)){
 }while (isNaN(numero1))
 
 do{
-    var operacao = input.question('Escolha a operaçao (soma ou subtração): ');
-    if (operacao !== 'soma' && operacao !== 'subtração'){
+    var operacao = input.question('Escolha a operaçao (soma ou subtracao): ');
+    if (operacao !== 'soma' && operacao !== 'subtracao'){
         console.log('Operaçao invalida.');
     }
-}while (operacao !== 'soma' && operacao !== 'subtração')
+}while (operacao !== 'soma' && operacao !== 'subtracao')
 
 do{
 var numero2 = parseInt(input.question('Insira um numero: '));
@@ -25,7 +25,7 @@ function calculador(){
     if (operacao === 'soma'){
         return numero1 + numero2
     }
-    else if (operacao === 'subtração'){
+    else if (operacao === 'subtracao'){
         return numero1 - numero2
     }
 }
