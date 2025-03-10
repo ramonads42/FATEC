@@ -23,9 +23,9 @@ if (regiao !== 1 && regiao !== 2 && regiao !== 3){
 }while (regiao !== 1 && regiao !== 2 && regiao !== 3)
 
 do{
-var distancia = parseFloat(input.question('Qual a distância em metros? '));
+var distancia = parseFloat(input.question('Qual a distancia em metros? '));
 if (isNaN(distancia) || distancia <= 0) {
-    console.log('Distância inválida.');
+    console.log('Distancia invalida.');
 }
 }while (isNaN(distancia) || distancia <= 0)
 
