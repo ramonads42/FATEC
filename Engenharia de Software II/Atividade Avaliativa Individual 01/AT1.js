@@ -6,10 +6,10 @@ var peso = 0
 
 do{
 var nome = input.question('Informe seu nome: ');
-if (!/^[\p{L}çÇ]+$/u.test(nome)) {
+if (!/^[\p{L}]+$/u.test(nome)) {
     console.log('Nome invalido:');
 }
-}while (!/^[\p{L}çÇ]+$/u.test(nome))
+}while (!/^[\p{L}]+$/u.test(nome))
 
 do{
 var alturaInput = input.question('Informe sua altura em centrimetros: ');
